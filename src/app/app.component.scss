@@ -1,0 +1,46 @@
+.angular-app {
+}
+
+.angular-app__nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  min-width: 200px;
+  transform: translateX(-100%);
+  transition: transform 200ms ease-in-out;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+.angular-app__nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.angular-app__nav-item {
+  margin-bottom: 10px;
+}
+
+.angular-app__nav-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.angular-app__button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.router-outlet {
+  margin-top: 20px;
+}

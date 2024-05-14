@@ -1,0 +1,23 @@
+<div class="angular-app">
+  <nav class="angular-app__nav {{ isOpen ? 'is-open' : '' }}">
+    <ul class="angular-app__nav-list">
+      <li class="angular-app__nav-item">
+        <a href="#">Home</a>
+      </li>
+      <li class="angular-app__nav-item">
+        <a href="#">About</a>
+      </li>
+      <li class="angular-app__nav-item">
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <button class="angular-app__button" (click)="handleToggleSideNav()">
+      Close
+    </button>
+  </nav>
+  <button class="angular-app__button" (click)="handleToggleSideNav()">
+    Show sidenav
+  </button>
+</div>
+
+<router-outlet />
